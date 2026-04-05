@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Posto de Gasolina</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Calculadora de Abastecimento</h2>
+        <form id="formAbast">
+            <label>Qual o combustível?</label>
+            <select id="tipo">
+                <option value="">Selecione...</option>
+                <option value="gasolina">Gasolina (R$ 5,89)</option>
+                <option value="etanol">Etanol (R$ 3,79)</option>
+                <option value="diesel">Diesel (R$ 6,10)</option>
+            </select>
+
+            <label>Quantidade (Litros)</label>
+            <input type="number" id="litros" step="0.01">
+
+            <button type="submit">Calcular Valor Total</button>
+        </form>
+        <div id="res"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
